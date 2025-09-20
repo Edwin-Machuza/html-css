@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/Html/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/Html/index.html"
+        }
+    ]
+}
